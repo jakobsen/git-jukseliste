@@ -1,6 +1,6 @@
 # git-jukseliste
-En oversikt over de viktigste kommandoene til Git og Bash.
-
+En oversikt over de viktigste kommandoene til Git og Terminalen (bash, zsh og fish).
+Det finnes veldig mange flere kommandoer det er verdt å lære seg (f.eks. [`git grep`](https://git-scm.com/docs/git-grep)), men du kommer langt med de under.
 
 ---
 ## Bash (kommandolinjen)
@@ -22,8 +22,11 @@ En oversikt over de viktigste kommandoene til Git og Bash.
 * `git status`: Viser om du har noen lokale endringer som ikke er lagt inn i git sin versjon av mappen. Sier ingenting om andre sine endringer.
 * `git add [fil]`: Legger valgte fil til i _staging area_, slik at du kan legge den til i en ny _commit_.
 * `git commit -m "melding"`: Lager en ny versjon av mappen og legger denne til i git. Meldingen burde kort beskrive endringene som er gjort.
-* `git push`: Laster siste commit du gjorde opp i versjonen som ligger på github.com.
-* `git pull`: Henter eventuelle endringer som andre har gjort på GitHub ned til din maskin. Denne burde kjøres jevnlig.
+* `git push origin [gren]`: Forsøker å dytte grenen du er på til [gren] på github.com.
+* `git pull origin [gren]`: Henter endringer fra GitHub-branchen [gren] og forsøker å merge dem med din nåværende branch.
 * `git branch`: Viser en liste over alle grenene som finnes på repoet.
 * `git checkout [gren]`: Flytter deg til branchen [gren].
 * `git checkout -b [gren]`: Oppretter og flytter deg til branchen [gren].
+* `git log`: Gå gjennom historikken til den nåværende branchen, commit for commit.
+* `git diff`: Se hva som er annerledes mellom filene i ditt Working Tree og filene i commiten du for øyeblikket befinner deg på.
+* `git diff --staged`: Samme som over, men sammenligner filene i din Staging Area med filene i commiten du for øyeblikket befinner deg på.
