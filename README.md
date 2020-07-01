@@ -1,6 +1,8 @@
 # git-jukseliste
 En oversikt over de viktigste kommandoene til Git og Terminalen (bash, zsh og fish).
 Det finnes veldig mange flere kommandoer det er verdt å lære seg (f.eks. [`git grep`](https://git-scm.com/docs/git-grep)), men du kommer langt med de under.
+De fleste kommandoene har også flere versjoner, og kan modifiseres ved hjelp av argumenter som start med en eller to bindestreker.
+En oversikt ligger [her](https://git-scm.com/docs).
 
 ---
 ## Bash (kommandolinjen)
