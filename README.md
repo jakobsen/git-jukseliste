@@ -23,7 +23,7 @@ En oversikt ligger [her](https://git-scm.com/docs).
 * `git clone [url]`: Lager en lokal kopi av repoet som ligger på den gitte url-en. For eksempel kan du bruke  `git clone https://github.com/erikaja/git-jukseliste.git` for å laste ned denne filen. Oppretter en mappe med samme navn som repoet i mappen kommandoen kjøres fra.
 * `git status`: Viser om du har noen lokale endringer som ikke er lagt inn i git sin versjon av mappen. Sier ingenting om andre sine endringer.
 * `git add [fil]`: Legger valgte fil til i _staging area_, slik at du kan legge den til i en ny _commit_.
-* `git commit -m "melding"`: Lager en ny versjon av mappen og legger denne til i git. Meldingen burde kort beskrive endringene som er gjort.
+* `git commit -m "melding"`: Lager en ny versjon av mappen og legger denne til i git. Meldingen burde kort beskrive endringene som er gjort, se under.*
 * `git push origin [gren]`: Forsøker å dytte grenen du er på til [gren] på github.com.
 * `git pull origin [gren]`: Henter endringer fra GitHub-branchen [gren] og forsøker å merge dem med din nåværende branch.
 * `git branch`: Viser en liste over alle grenene som finnes på repoet.
@@ -32,3 +32,17 @@ En oversikt ligger [her](https://git-scm.com/docs).
 * `git log`: Gå gjennom historikken til den nåværende branchen, commit for commit.
 * `git diff`: Se hva som er annerledes mellom filene i ditt Working Tree og filene i commiten du for øyeblikket befinner deg på.
 * `git diff --staged`: Samme som over, men sammenligner filene i din Staging Area med filene i commiten du for øyeblikket befinner deg på.
+
+#### *) Om commit-meldinger
+
+Det finnes (overraskende) sterke meninger om hvordan commit-meldinger burde formateres. De kan også være på mer enn en linje, med flere avsnitt.
+For å få til dette skriver du bare `git commit`.
+Da vil det åpnes en tekstbehandler med informasjon om commiten, og du kan skrive en linje øverst som en kort beskrivelse og flere avsnitt under som utdyping.
+Det finnes ikke bare én stil som er korrekt, men [denne ressursen](https://chris.beams.io/posts/git-commit/) kommer med forslag til 7 regler, hvor flere er blitt nesten standard i bransjen. De er:
+1. Separer overskriften fra brødteksten med en blank linje.
+2. Overskriften skal ikke være lenger enn 50 karakterer (flere tekstbehandlere og GitHub kjefter på deg om du prøver deg).
+3. Overskriften skal starte med stor forbokstav.
+4. Overskriften skal ikke ende med punktum.
+5. Overskriften skal skrives i [imperativ](https://www.sprakradet.no/sprakhjelp/Praktisk-grammatikk/Imperativ/), som en kommando. Dette er konsekvent med hvordan git sine automatiske meldinger skrives.
+6. Bruk linjeskift ved 72 karakterer.
+7. Bruk brødteksten til å forklare _hva_ og _hvorfor_, ikke _hvordan_.
