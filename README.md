@@ -46,3 +46,6 @@ Det finnes ikke bare én stil som er korrekt, men [denne ressursen](https://chri
 5. Overskriften skal skrives i [imperativ](https://www.sprakradet.no/sprakhjelp/Praktisk-grammatikk/Imperativ/), som en kommando. Dette er konsekvent med hvordan git sine automatiske meldinger skrives.
 6. Bruk linjeskift ved 72 karakterer.
 7. Bruk brødteksten til å forklare _hva_ og _hvorfor_, ikke _hvordan_.
+
+Det viktigste er at alle teammedlemmene er enige om hvordan commit-meldinger skal formateres, og at en holder seg til retningslinjene når de først er satt.
+Om dette ikke skjer blir prosjektets historie fort veldig uoversiktlig.
